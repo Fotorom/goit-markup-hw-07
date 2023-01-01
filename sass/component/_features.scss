@@ -1,0 +1,36 @@
+/*---------------------особливості------------------  */
+.features {
+  padding: 94px 0;
+}
+.features__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+.features__item {
+  width: 270px;
+}
+.features__title {
+  color: var(--headline-black-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.features__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}

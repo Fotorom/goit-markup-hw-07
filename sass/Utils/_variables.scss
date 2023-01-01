@@ -1,0 +1,18 @@
+@mixin btn($width) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--accent-color);
+  color: var(--main-white-color);
+  border: none;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  padding: 10px 32px;
+  width: $width;
+  border-radius: 4px;
+}
