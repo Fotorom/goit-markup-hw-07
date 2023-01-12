@@ -1,5 +1,8 @@
 /* ----------------чим ми займаємося-----------------  */
 .work {
+  @media screen and(max-width:1199px) {
+    display: none;
+  }
   padding-bottom: 94px;
   text-align: center;
 }
@@ -9,10 +12,6 @@
 }
 .work__item {
   position: relative;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 .work__img {
   display: block;

@@ -55,25 +55,65 @@ h3 {
   color: var(--logo-black-color);
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  padding: 24px 0;
-  margin-right: 91px;
+  padding: 16px 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding: 26px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+    padding: 24px 0;
+  }
 }
 
 .logo__indent {
   color: var(--accent-color);
 }
 
+.footer__logo {
+  display: inline-block;
+  color: var(--main-white-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+  }
+}
+
 /*----------------------container ----------------------------------*/
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 /* -------------------section-------------------- */
-.title {
+.section-title {
   color: var(--headline-black-color);
   font-weight: 700;
   font-size: 36px;
@@ -87,6 +127,9 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social__item:not(:last-child) {

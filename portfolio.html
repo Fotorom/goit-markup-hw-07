@@ -31,54 +31,96 @@
 
     <header>
       <div class="container nav-wrap bottom-border">
-        <a class="logo" href="./index.html">
-          <span class="logo__indent">Web</span>Studio</a
-        >
-        <nav>
-          <ul class="nav">
-            <li class="nav__item">
-              <a class="nav__link" href="./index.html">Студія</a>
-            </li>
-            <li class="nav__item nav__link--active">
-              <a class="nav__link" href="./portfolio.html"
-                >Портфоліо</a
+        <div class="logo-container">
+          <a class="logo" href="./index.html">
+            <span class="logo__indent">Web</span>Studio</a
+          >
+          <button class="nav__btn--open js-open-menu">
+            <svg width="40px" height="40px">
+              <use
+                class="nav__btn--open"
+                href="./Image/defs.svg#menu-open"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="nav-container js-menu-container">
+          <nav>
+            <ul class="nav">
+              <li class="nav__item">
+                <a
+                  class="nav__link nav__link--active"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./index.html">Контакти</a>
+              </li>
+            </ul>
+            <button class="nav__btn--close js-close-menu">
+              <svg width="40px" height="40px">
+                <use
+                  class="nav__btn--open"
+                  href="./Image/defs.svg#menu-close"
+                ></use>
+              </svg>
+            </button>
+          </nav>
+
+          <ul class="contact-menu">
+            <li class="contact__item">
+              <a
+                class="contact-menu__link"
+                href="mailto:info@devstudio.com"
               >
+                <svg
+                  class="contact-menu__icon-mail"
+                  width="16px"
+                  height="12px"
+                >
+                  <use href="./Image/defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./index.html">Контакти</a>
+            <li class="contact__item">
+              <a
+                class="contact-menu__link contact-menu__link--accent"
+                href="tel:+380961111111"
+              >
+                <svg
+                  class="contact-menu__icon-phone"
+                  width="10px"
+                  height="16px"
+                >
+                  <use href="./Image/defs.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <!-- контакты в шапке -->
-        <ul class="contact-menu">
-          <li class="contact__item">
-            <a
-              class="contact-menu__link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg
-                class="contact-menu__icon-mail"
-                width="16px"
-                height="12px"
-              >
-                <use href="./Image/defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact__item">
-            <a class="contact-menu__link" href="tel:+380961111111">
-              <svg
-                class="contact-menu__icon-phone"
-                width="10px"
-                height="16px"
-              >
-                <use href="./Image/defs.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="contact-social">
+            <li class="contact-social__item">
+              <a class="contact-social__link" href="">Twitter</a>
+            </li>
+            <li class="contact-social__item">
+              <a class="contact-social__link" href="">Facebook</a>
+            </li>
+            <li class="contact-social__item">
+              <a class="contact-social__link" href="">Instagram</a>
+            </li>
+            <li class="contact-social__item">
+              <a class="contact-social__link" href="">Linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -313,7 +355,7 @@
             <a class="footer__logo" href="./index.html">
               <span class="logo__indent">Web</span>Studio</a
             >
-            <address>
+            <address class="wrap-adress">
               <p class="footer__address">
                 м. Київ, пр-т Лесі Українки, 26
               </p>
@@ -328,7 +370,7 @@
               >
             </address>
           </div>
-          <!-- присоединится -->
+          
           <div class="accession">
             <b class="footer__title">приєднуйтесь</b>
             <ul class="social__list">
@@ -375,7 +417,7 @@
             </ul>
           </div>
 
-          <div>
+          <div >
             <b class="footer__title">Підпишіться на розсилку</b>
             <form>
               <div class="footer__mail">
@@ -384,17 +426,22 @@
                   type="email"
                   placeholder="E-mail"
                 />
-                <button type="submit" class="btn">
+                <button type="submit" class="footer__btn">
                   Підписатися
-                  <img src="./Image/send.svg" alt="" />
+                  <img
+                    src="./Image/send.svg"
+                    alt=""
+                    class="footer__btn--icon"
+                  />
                 </button>
               </div>
             </form>
           </div>
         </div>
       </div>
-    </footer>
+    </footer> 
     <script src="./js/form.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
