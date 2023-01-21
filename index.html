@@ -236,10 +236,18 @@
           <ul class="team__list">
             <li class="team__item">
               <img
-                class="team__photo"
-                src="./Image/img.jpg"
+                srcset="./Image/foto1-270.jpg 270w, 
+                        ./Image/foto1-354.jpg 354w,  
+                        ./Image/foto1-708.jpg 708w,  
+                        ./Image/foto1-450.jpg 450w, 
+                        ./Image/foto1-900.jpg 900w"
+                 sizes="(min-width: 1200px) 270px,
+                        (min-width: 768px) 354px,
+                        (min-width: 300px) 450px,
+                         100%"                
+                         
                 alt="Ігор Дем'яненко"
-                width="270"
+                class="team__photo"
               />
               <div class="team__content">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
@@ -305,7 +313,8 @@
                 class="team__photo"
                 src="./Image/img(1).jpg"
                 alt="Ольга Рєпіна"
-                width="270"
+                class="team__photo"
+
               />
               <div class="team__content">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -371,7 +380,8 @@
                 class="team__photo"
                 src="./Image/img(2).jpg"
                 alt="Микола Тарасов"
-                width="270"
+                class="team__photo"
+
               />
               <div class="team__content">
                 <h3 class="team__title">Микола Тарасов</h3>
@@ -437,7 +447,7 @@
                 class="team__photo"
                 src="./Image/img(3).jpg"
                 alt="Михайло Єрмаков"
-                width="270"
+                class="team__photo"
               />
               <div class="team__content">
                 <h3 class="team__title">Михайло Єрмаков</h3>
