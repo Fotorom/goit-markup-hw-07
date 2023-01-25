@@ -45,8 +45,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40px;
-  height: 40px;
   border: none;
   background-color: var(--main-white-color);
 }
@@ -69,8 +67,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   right: 15px;
-  width: 40px;
-  height: 40px;
   border: none;
   background-color: var(--main-white-color);
 }
